@@ -2,14 +2,14 @@
 
 int main(int argc, char* argv[]) {
 
-    printf("argc:     %d\n", argc);
-    printf("argv[0]:  %s\n", argv[0]);
+    std::cout << "argc: " << argc << std::endl;
+    std::cout << "argv[0]: " << argv[0] << std::endl;
 
     if (argc == 1) {
         printf("No arguments were passed.\n");
     }
     else {
-        printf("Arguments:\n");
+        std::cout << "Arguments:\n";
 
         for (int i = 1; i < argc; ++i) {
             std::cout << "Hello, " << argv[i] << "!" << std::endl;
